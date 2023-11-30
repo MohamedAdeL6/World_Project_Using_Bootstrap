@@ -60,5 +60,75 @@ owl.owlCarousel({
   },
 });
 
+// --------------------------------------------   Section Header When Scrolling
+var btnScrool = document.querySelector(".btn_scroll_top");
+
+window.onscroll = () => {
+  if (window.scrollY > 400) {
+    btnScrool.classList.remove("btn_hidden");
+  } else {
+    btnScrool.classList.add("btn_hidden");
+  }
+};
+// -------------------------------------------   Scrolling To Top
+btnScrool.onclick = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth",
+  });
+};
+
+// ---------------------------------------------  Section landing_Page  one owl-carousel
+var owl = $(".slider_one .owl-carousel");
+owl.owlCarousel({
+  items: 1,
+  margin: 10,
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  // autoplayHoverPause: true,
+});
+// --------------------------------------------  Section landing_Page  two owl-carousel
+var owl = $(".slider_two .owl-carousel");
+owl.owlCarousel({
+  items: 1,
+  margin: 10,
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 2000,
+  // autoplayHoverPause: true,
+});
+// ----------------------------------------------  Section landing_Page Four owl-carousel
+var owl = $(".slider_four .owl-carousel");
+owl.owlCarousel({
+  items: 1,
+  margin: 10,
+  loop: true,
+  margin: 10,
+  nav: true,
+  autoplay: true,
+  autoplayTimeout: 2100,
+  // autoplayHoverPause: true,
+});
+// ---------------------------------------------  Section Three owl-carousel
+var owl = $(".slider_three .owl-carousel");
+owl.owlCarousel({
+  items: 1,
+  margin: 10,
+  loop: true,
+  margin: 10,
+  nav: false,
+  autoplay: true,
+  autoplayTimeout: 2200,
+  // autoplayHoverPause: true,
+});
+
+
+
+
 
 
