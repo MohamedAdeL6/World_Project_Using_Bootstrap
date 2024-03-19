@@ -1,15 +1,27 @@
 // --------------------------------------------   Section Header When Scrolling
-var haederSection = document.querySelector("#header_area");
+// var haederSection = document.querySelector("#header_area");
 
-window.onscroll = () => {
-  if (window.scrollY > 600) {
-    haederSection.style.cssText = `background-color: #000; top: 0;`;
+// window.onscroll = () => {
+//   if (window.scrollY > 600) {
+//     haederSection.style.cssText = `background-color: #000; top: 0;`;
 
-  } else {
-    haederSection.style.cssText = `background-color: transparent; top: 0;`;
+//   } else {
+//     haederSection.style.cssText = `background-color: transparent; top: 0;`;
 
-  }
-};
+//   }
+// };
+
+// var haederSection = document.querySelector(".navbar.navbar-expand-lg");
+
+// console.log(haederSection);
+
+// window.onscroll = () => {
+//   if (window.scrollY > 600) {
+//     haederSection.style.cssText = `background-color: #000; top: 0;`;
+//   } else {
+//     haederSection.style.cssText = `background-color: transparent; top: 0;`;
+//   }
+// };
 
 //------------------------------------------------  Show Wlecom Messege
 const text = document.querySelector(".sec-text");
@@ -34,7 +46,7 @@ let inputSearchxmark = document.querySelector(
   "#header_area form div:nth-child(2)"
 );
 
-inputSearchxmark.onclick = _ => (inputSearch.value = "");
+inputSearchxmark.onclick = (_) => (inputSearch.value = "");
 
 // --------------------------------------------  Section Banner_Slider  one owl-carousel
 var owl = $(".Banner_Slider .owl-carousel");
@@ -126,9 +138,3 @@ owl.owlCarousel({
   autoplayTimeout: 2200,
   // autoplayHoverPause: true,
 });
-
-
-
-
-
-

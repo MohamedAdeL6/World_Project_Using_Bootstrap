@@ -44,6 +44,10 @@
 	background-color: transparent;
 }
 
+#header_area .navbar.navbar-expand-lg {
+	background-color: #000;
+}
+
 .navbar .collapse .navbar-nav .nav-item .nav-link {
 	display: inline-block;
 	color: #8d8d8d;
@@ -254,6 +258,29 @@
 		left: 0%;
 	}
 }
+
+@media screen and (min-width: 567px) {
+	#Banner_Sec .write_text .text.sec-text:before {
+		background-color: #4c4c4c;
+	}
+}
+@media screen and (min-width: 1000px) {
+	#Banner_Sec .write_text .text.sec-text:before {
+		background-color: #180c05;
+	}
+}
+
+/* @media screen and (min-width: 470px) {
+	#Banner_Sec .write_text .text.sec-text:before {
+		background-color: #180c05;
+	}
+}
+
+@media screen and (min-width: 470px) {
+	#Banner_Sec .write_text .text.sec-text:before {
+		background-color: #180c05;
+	}
+} */
 
 
 /* ------------------------------  owl-carousel  ------------------------ */
