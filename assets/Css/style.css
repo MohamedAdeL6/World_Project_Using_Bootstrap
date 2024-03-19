@@ -264,6 +264,7 @@
 		background-color: #4c4c4c;
 	}
 }
+
 @media screen and (min-width: 1000px) {
 	#Banner_Sec .write_text .text.sec-text:before {
 		background-color: #180c05;
@@ -632,4 +633,61 @@
 #sec_3 .d-flex .btn.btn-outline-secondary:hover {
 	background-color: blue !important;
 	color: #fff !important;
+}
+
+/* --------------------------------------   Section Footer  ------------------------------------*/
+#footer-area {
+	margin-top: 50px;
+	padding: 50px 0;
+	background-color: #000;
+	color: #8d8d8d
+}
+
+#footer-area a {
+	text-decoration: none;
+	color: #8d8d8d;
+	transition: all .7s;
+}
+
+#footer-area a:hover {
+	color: #00f;
+}
+
+#footer-area .footer-single-widget .footer-menu li {
+	width: calc(94% / 3);
+	margin-left: 1%;
+	margin-top: 3%;
+}
+
+#footer-area form {
+	position: relative;
+
+}
+
+#footer-area input[type="email"] {
+	border: none;
+	background-color: transparent;
+	padding: 10px;
+	border-bottom: 1px solid #8d8d8d;
+	width: 100%;
+	color: #8d8d8d;
+}
+
+#footer-area input[type="email"]+button {
+	position: absolute;
+	height: 35px;
+	top: 5px;
+	right: 10px;
+	z-index: 10;
+	background-color: transparent;
+	border: none;
+	cursor: pointer;
+	width: 50px;
+	text-align: right;
+
+}
+
+#footer-area input[type="email"]+button i {
+	font-size: 17px;
+	color: #959595;
 }
